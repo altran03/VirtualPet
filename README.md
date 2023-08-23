@@ -1,38 +1,271 @@
-void setup(){
-  size(400,400);
-  background(193,193,193);
-}
+Virtual Pet
+In this project you will write a program using Processing that displays any animal of your choosing. You can use almost any drawing functions that you would like, you can find the full list at the Processing Reference (See note below). Your program will need to be divided into at least two functions void setup() and void draw(). You may find slides of the apjavaProcessing slide presentation helpful.
 
-void draw(){
-    //noFill();
-    //TAIL
-  rotate(PI/4);
-  noFill();
-  strokeWeight(8);
-  stroke(130,134,116);
-  arc(110, 70, 150, 150, 0, PI/2 );
-  rotate(-PI/4);
-  stroke(0,0,0);
-  strokeWeight(1);
-  fill(169,140,109);
-  ellipse(267,230,75,40); //closer backfoot
-  ellipse(150,232,75,40); //farther backfoot
-  triangle(280,75,280,185,385,115); //head
-  ellipse(200,175,250,125);
-  ellipse(135,232,75,40); //closer back foot
-  ellipse(252,230,75,40); //closer front foot
-  fill(255,255,255);
-  circle(320,115,25); //eye
-  fill(0,0,0);
-  circle(321,111,10); //eyeball
-  fill(255,255,255);
-  triangle(347,140,337,164,337,150); //teeth
-  triangle(328,153,344,144,328,170);
-  strokeWeight(5); //hat
-  fill(0,0,0);
-  line(245,90, 325,90);
-  rect(263,40,52,50);
-  stroke(130,134,116);
-  line(263,73,315,73);
-}
+When you are happy with the appearance of your virtual pet, you will post your finished program on a website. You can get a free GitHub account for your website. Instructions on how to put your program on a GitHub website are on slides 73-86 of the apjavaProcessing slide presentation. Submit the link to your website on google classroom.
 
+In the next assignment we will use an Arduino to interact with your virtual pet. As you work on your design, think about an element of the design that could be changed with a single variable.
+
+Note: The following Processing functions do not work on the web:
+circle()
+square()
+clear()
+delay()
+System.out.println()
+System.out.print()
+push() and pop()
+Using CHORD or PIE modes with arc()
+Using an image as an argument in background()
+Arduino code
+Samples of Student Work
+Johnny
+Tiffany
+Nash
+Max
+Kaitlin
+Zoey
+Federico
+Jocelyn
+Eric
+Koey
+Chun Ho
+Curtis
+Kenny
+Pansy
+Alison
+Nikhita
+Keneth
+Tiffany
+Jimmy
+Caeron
+Sam
+Tyler
+Albert
+Gabriella
+Michelle
+Alex
+Viva
+Karina
+Bruno
+Damian
+Paolo
+William
+Alvin
+Christina
+Haden
+Joanne
+Irisa
+Christopher
+Kumiko
+Wing
+Caitlyn
+Breanna
+Matthew
+Ye
+Van
+Joyce
+Joshua
+Edward
+Aiden
+Justin
+Andrew
+Jeffrey
+Dylan
+Mira
+Austin
+Jason
+Ivana
+Gary
+Emily
+William
+Stephen
+Daniel
+Lilia
+Andrew
+Luke
+Liam
+Hayden
+Jacob
+Nikhita
+Noella
+Caleb
+Gabriel
+Eric
+Joyce
+Vivian
+Lexian
+Raina
+Rafael
+Nathaniel
+Nicholas
+Brian
+Stella
+Wendy
+Joseph
+Joshua
+Brianna
+Justin
+Qiao Yan
+Antonio
+Caden
+Tommy
+David
+Darren
+Huishan
+Brennan
+Jennifer
+Deion
+Aaron
+Jackie
+Christina
+Joselino
+Nathan
+Munkhtushie
+Kyle
+Noelle
+Andy
+Audrey
+William
+Jenna
+Ryan
+Nathan
+Ivy
+Gabriel
+Joyce
+Pyry
+Mika
+Sophia
+Ethan
+Nate
+Eric
+Koen
+Annie
+Brayden
+Jason
+Ivan
+Tobias
+Manuel
+Willa
+James
+Kathleen
+Juan
+Toby
+Ryan
+Ryan
+Evangeline
+Miriam
+Ethan
+Loren
+Sally
+Tennyson
+Allynaraizel
+Alvin Sonia
+AndreiRock
+Maxwell
+Humphrey
+Hannah
+Piero
+Fiona
+Isaac
+Karla
+Saw
+Aiden
+Theo
+Gage
+Tara
+Maya
+Dylan
+Nicholas
+Samson
+Patrick
+Diego
+Luca
+Cuiyin
+Laura
+Noel
+Yiyuan
+Artiom
+Marina
+Julissa
+Kevin
+Samantha
+Charlotte
+Dylan
+Omar
+Joanna
+Victor
+Ivan
+Kaijun
+Michelle
+Kyle
+Mackenzie
+Douglas
+Daniel
+Jerry
+Rock
+Gage
+Angela
+Diego
+Ivona
+Sandy
+Johnathan
+KaloonRidge
+Robin
+Kayla
+Justin
+Leanna
+Philix
+Lixin
+Audrey
+Emily
+Haoheng
+Gabriel
+Alejandro
+Angela
+Kelvin
+Lily
+Aaron
+Terrance
+Jessica
+Grace
+Danill
+Matthew
+Leanna
+Andre
+Felicia
+Andrew
+Calvin
+Aaron
+Justin
+Kyla
+Calvin
+Alessandra
+James
+Yuxi
+Aaron
+Hao
+Katie
+Benjamin
+Etienne
+Matthew
+Wanyan
+Kaitlyn
+Austin
+Tanias
+Evan
+Xiaoyi
+Marie-Fleur
+Richard
+Supath
+Amy
+Lisa
+[Jeffrey](https://likuang2.github.io/VirtualPet/]
+Garvin
+Ethan
+Ekaterina
+Cole
+Alice
+Raymond
+Susanna
+Jocelyn
+Davyn
+Francisco
