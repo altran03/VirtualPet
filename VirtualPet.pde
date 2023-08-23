@@ -1,4 +1,3 @@
-
 void setup(){
   size(400,400);
   background(193,193,193);
@@ -23,9 +22,9 @@ void draw(){
   ellipse(135,232,75,40); //closer back foot
   ellipse(252,230,75,40); //closer front foot
   fill(255,255,255);
-  circle(320,115,25); //eye
+  ellipse(320,115,25,25); //eye
   fill(0,0,0);
-  circle(321,111,10); //eyeball
+  ellipse(321,111,10,10); //eyeball
   fill(255,255,255);
   triangle(347,140,337,164,337,150); //teeth
   triangle(328,153,344,144,328,170);
