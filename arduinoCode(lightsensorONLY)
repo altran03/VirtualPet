@@ -3,7 +3,7 @@ import cc.arduino.*;
 Arduino arduino;
 
 void setup(){
-  size(1000,400);
+  size(400,400);
   background(193,193,193);
   arduino=new Arduino(this, Arduino.list()[1],57600); //change value in bracket to satisfy your arduino
 }
