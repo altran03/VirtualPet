@@ -1,0 +1,82 @@
+import processing.serial.*;
+import cc.arduino.*;
+Arduino arduino;
+
+void setup(){
+  size(400,900);
+  background(193,193,193);
+  arduino=new Arduino(this, Arduino.list()[1],57600); //change value in bracket to satisfy your arduino
+}
+
+void draw(){
+    //noFill();
+  int jump = arduino.analogRead(4);
+  translate(0,400);
+  System.out.println(jump);
+    //TAIL
+  if (jump<340){
+  background(193,193,193);
+  rotate(PI/4);
+  noFill();
+  strokeWeight(8);
+  stroke(130,134,116);
+  arc(110, 70, 150, 150, 0, PI/2 );
+  rotate(-PI/4);
+  stroke(0,0,0);
+  strokeWeight(1);
+  fill(169,140,109);
+  ellipse(267,230,75,40); //closer backfoot
+  ellipse(150,232,75,40); //farther backfoot
+  triangle(280,75,280,185,385,115); //head
+  ellipse(200,175,250,125);
+  ellipse(135,232,75,40); //closer back foot
+  ellipse(252,230,75,40); //closer front foot
+  fill(255,255,255);
+  ellipse(320,115,25,25); //eye
+  fill(0,0,0);
+  ellipse(321,111,10,10); //eyeball
+  fill(255,255,255);
+  triangle(347,140,337,164,337,150); //teeth
+  triangle(328,153,344,144,328,170);
+  strokeWeight(5); //hat
+  fill(0,0,0);
+  line(245,90, 325,90);
+  rect(261,40,50,50);
+  stroke(130,134,116);
+  line(261,73,311,73);
+  System.out.println(jump);
+  }
+  else { 
+  background(193,193,193);
+  jump =jump-340;
+  rotate(PI/4);
+  noFill();
+  strokeWeight(8);
+  stroke(130,134,116);
+  arc(110, 70-jump, 150, 150, 0, PI/2 );
+  rotate(-PI/4);
+  stroke(0,0,0);
+  strokeWeight(1);
+  fill(169,140,109);
+  ellipse(267,230-jump,75,40); //closer backfoot
+  ellipse(150,232-jump,75,40); //farther backfoot
+  triangle(280,75-jump,280,185-jump,385,115-jump); //head
+  ellipse(200,175-jump,250,125);
+  ellipse(135,232-jump,75,40); //closer back foot
+  ellipse(252,230-jump,75,40); //closer front foot
+  fill(255,255,255);
+  ellipse(320,115-jump,25,25); //eye
+  fill(0,0,0);
+  ellipse(321,111-jump,10,10); //eyeball
+  fill(255,255,255);
+  triangle(347,140-jump,337,164-jump,337,150-jump); //teeth
+  triangle(328,153-jump,344,144-jump,328,170-jump);
+  strokeWeight(5); //hat
+  fill(0,0,0);
+  line(245,90-jump, 325,90-jump);
+  rect(261,40-jump,50,50);
+  stroke(130,134,116);
+  line(261,73-jump,311,73-jump);
+  }
+  System.out.println(jump);
+  }
